@@ -41,8 +41,8 @@ def test_export_pdf_help_exits_zero():
     assert result.returncode == 0
 
 
-def test_scan_stub_prints_not_implemented():
-    result = _run(["scan"])
+def test_dedupe_stub_prints_not_implemented():
+    result = _run(["dedupe"])
     assert result.returncode == 0
     assert "not implemented yet" in result.stdout
 
